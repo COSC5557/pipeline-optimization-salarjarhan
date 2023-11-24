@@ -102,3 +102,12 @@ for (i in 1:length(results)) {
   rmse[[i]] <- rmse_test
 }
 
+
+# References
+#https://chat.openai.com/share/0fede454-669e-430f-8c66-1f158e9284da
+#https://stackoverflow.com/questions/66675495/debugging-checking-steps-in-mlr-pipeops
+#https://mlr3book.mlr-org.com/chapters/chapter7/sequential_pipelines.html
+#https://mlr3pipelines.mlr-org.com/reference/PipeOp.html
+#https://mlr3pipelines.mlr-org.com/reference/Graph.html
+#https://mlr3pipelines.mlr-org.com/reference/mlr_learners_graph.html
+#https://github.com/mlr-org/mlr-outreach/tree/main/2020_whyr
