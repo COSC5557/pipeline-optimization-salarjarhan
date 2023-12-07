@@ -29,8 +29,11 @@ task <- as_task_regr(train_data, target = "quality")
 test_task <- as_task_regr(test_data, target = "quality")
 
 # Define the steps for the pipeline
-scale <- po("scale")  # Scale the features
-encode <- po("encode") # Factor Encoding
+#scale <- po("scale")  # Scale the features
+#encode <- po("encode") # Factor Encoding
+scale <- po("scale", robust = to_tune(c(TRUE, FALSE)))
+encode <- po("encode", , method = to_tune(c("one-hot", "treatment", "sum")))
+
 
 # Define regression learners with specified hyperparameters
 knn <- po("learner", learner = lrn("regr.kknn", k = to_tune(lower = 1, upper = 20), distance = to_tune(lower = 1, upper = 20)))  # K-Nearest Neighbors regression
@@ -111,3 +114,4 @@ for (i in 1:length(results)) {
 #https://mlr3pipelines.mlr-org.com/reference/Graph.html
 #https://mlr3pipelines.mlr-org.com/reference/mlr_learners_graph.html
 #https://github.com/mlr-org/mlr-outreach/tree/main/2020_whyr
+#https://mlr-org.com/gallery/optimization/2021-03-10-practical-tuning-series-tune-a-preprocessing-pipeline/#tuning-the-pipeline
