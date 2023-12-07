@@ -1,0 +1,71 @@
+$scale.robust
+[1] TRUE
+
+$encode.method
+[1] "treatment"
+
+$regr.kknn.k
+[1] 12
+
+$regr.kknn.distance
+[1] 1.002881
+################################
+$regr.ranger.num.threads
+[1] 1
+
+$scale.robust
+[1] FALSE
+
+$encode.method
+[1] "sum"
+
+$regr.ranger.num.trees
+[1] 995
+
+$regr.ranger.min.node.size
+[1] 1
+
+$regr.ranger.mtry
+[1] 2
+################################
+$regr.svm.kernel
+[1] "radial"
+
+$regr.svm.type
+[1] "eps-regression"
+
+$scale.robust
+[1] TRUE
+
+$encode.method
+[1] "sum"
+
+$regr.svm.cost
+[1] 1.671197
+
+$regr.svm.epsilon
+[1] 0.08171913
+
+$regr.svm.gamma
+[1] 0.4028251
+################################
+$regr.xgboost.early_stopping_set
+[1] "none"
+
+$regr.xgboost.nthread
+[1] 1
+
+$regr.xgboost.verbose
+[1] 0
+
+$scale.robust
+[1] TRUE
+
+$encode.method
+[1] "sum"
+
+$regr.xgboost.nrounds
+[1] 77
+
+$regr.xgboost.max_depth
+[1] 7
