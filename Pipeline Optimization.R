@@ -32,7 +32,7 @@ test_task <- as_task_regr(test_data, target = "quality")
 #scale <- po("scale")  # Scale the features
 #encode <- po("encode") # Factor Encoding
 scale <- po("scale", robust = to_tune(c(TRUE, FALSE)))
-encode <- po("encode", , method = to_tune(c("one-hot", "treatment", "sum")))
+encode <- po("encode", method = to_tune(c("one-hot", "treatment", "sum")))
 
 
 # Define regression learners with specified hyperparameters
